@@ -6,6 +6,8 @@ module.exports = {
     extend: {
       colors: {
         figyelllow: '#FFF29B',
+        figash: '#F1F1F1',
+        figash2: '#F7F7F7',
       }
     },
 

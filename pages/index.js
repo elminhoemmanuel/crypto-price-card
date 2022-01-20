@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import React, { useState, useEffect } from 'react'
 import Loader from '../components/base/Loader';
-import Card from '../components/layout/Card';
+import ErrorDisplay from '../components/base/ErrorDisplay';
+import CardDisplay from '../components/layout/CardDisplay';
 
 
 export default function Home() {
@@ -19,7 +20,8 @@ export default function Home() {
         // console.log(validateData(usedData));
         // interval to poll enpoint every 20 seconds
         const interval = setInterval(() => {
-            setLoading(true)
+            // setLoading(true) commented this to prevent refresh of page during 
+            // polling of endpoint so that the user is not distracted 
             getData();
         }, (pollInterval * 1000))
 
@@ -77,19 +79,19 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Crypto Pricer</title>
-                <meta name="keywords" content="Crypto Pricer" />
+                <title>Crypto Price Viewer</title>
+                <meta name="keywords" content="Crypto Price Viewer" />
             </Head>
 
-            <div className="px-4 md:px-10 py-10">
+            <div className="px-5 md:px-12 lg:px-16 py-16 bg-figyellow 2xl:max-w-screen-2xl 2xl:mx-auto">
                 {
                     loading ? <Loader /> : 
                     <div>
                         {
-                            error && <p className="text-red-500 text-base text-center">{error}</p> 
+                            error && <ErrorDisplay err={error} /> 
                         }
                         {
-                            usedData[0] && !error && <Card data={validateData(usedData)} /> 
+                            usedData[0] && !error && <CardDisplay data={validateData(usedData)} /> 
                         }
                     </div>
                     
