@@ -5,7 +5,7 @@ module.exports = {
     
     extend: {
       colors: {
-        caspurple1: '#4C00C2',
+        figyelllow: '#FFF29B',
       }
     },
 
