@@ -1,0 +1,39 @@
+{
+  "name": "crypto-price-card",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0 -p ${PORT:-8080}",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "next": "10.0.9",
+    "next-images": "^1.7.0",
+    "next-redux-wrapper": "^7.0.4",
+    "notyf": "^3.10.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.2.0",
+    "react-redux": "^7.2.5",
+    "react-select": "^4.3.1",
+    "redux": "^4.1.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0",
+    "sass": "^1.32.8"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "autoprefixer": "^10.2.5",
+    "babel-jest": "^27.4.6",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.4.7",
+    "postcss": "^8.2.8",
+    "react-test-renderer": "^17.0.2",
+    "tailwindcss": "^2.0.4"
+  }
+}
