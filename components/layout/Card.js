@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 
+
 const Card = ({ data }) => {
 
     useEffect(() => {
