@@ -20,7 +20,7 @@ const CardDisplay = ({ data }) => {
     //     }
     // }, [])
 
-    return <div className="w-full md:w-3/5 mx-auto">
+    return <div className="w-full md:w-3/4 lg:w-3/5 mx-auto">
 
         <CardHeader url="https://global-uploads.webflow.com/6114c8bdb7b77370f7d9c0ab/6129012dc3500f4fd2ebb3c5_near-logo-lg-1.svg" />
 

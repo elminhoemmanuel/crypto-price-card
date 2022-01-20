@@ -83,7 +83,7 @@ export default function Home() {
                 <meta name="keywords" content="Crypto Price Viewer" />
             </Head>
 
-            <div className="px-5 md:px-12 lg:px-16 py-16 bg-figyellow">
+            <div className="px-5 md:px-12 lg:px-16 py-16 bg-figyellow 2xl:max-w-screen-2xl 2xl:mx-auto">
                 {
                     loading ? <Loader /> : 
                     <div>
