@@ -13,7 +13,7 @@ html, body{
     height: 100%;
     margin:0;
     padding:0;
-
+    background-color: #FFF29B;
 }
 
 // styles for spinner
@@ -21,11 +21,33 @@ html, body{
     width:35px;
     height:35px;
     border-radius:50%;
-    background:conic-gradient(#0000 10%,#dbcd72);
+    background:conic-gradient(#0000 10%,#ffffff);
     -webkit-mask:radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
     animation: s3 1s infinite linear;
   }
   @keyframes s3 {to{transform: rotate(1turn)}}
+
+
+// style to prevent text break out
+.no-overflow {
+
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+  
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  
+  }
 
 
 
