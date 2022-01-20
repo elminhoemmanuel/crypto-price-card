@@ -6,7 +6,7 @@ import { RiHandCoinFill } from "react-icons/ri"
 
 const Card = ({ data }) => {
 
-    let scaleFactor = 24
+    const scaleFactor = 24
 
     const formatDeposit = (deposit)=>{
         let num = deposit / ( 10**scaleFactor );
@@ -27,7 +27,7 @@ const Card = ({ data }) => {
                 <div className="bg-figyelllow rounded py-2 px-3 flex items-center justify-center"><FaPlaneDeparture className="h-5 w-5text-black" /></div>
                 <p className="font-bold">Sender</p>
             </div>
-            <p className="no-overflow text-center">
+            <p data-testid="sender" className="no-overflow text-center">
                 &nbsp;{data.sender}
             </p>
         </div>
@@ -37,7 +37,7 @@ const Card = ({ data }) => {
                 <div className="bg-figyelllow rounded py-2 px-3 flex items-center justify-center"><FaPlaneArrival className="h-5 w-5text-black" /></div>
                 <p className="font-bold">Receiver</p>
             </div>
-            <p className="no-overflow text-center">
+            <p data-testid="receiver" className="no-overflow text-center">
                 &nbsp;{data.receiver}
             </p>
         </div>
@@ -47,7 +47,7 @@ const Card = ({ data }) => {
                 <div className="bg-figyelllow rounded py-2 px-3 flex items-center justify-center"><AiOutlineColumnHeight className="h-5 w-5text-black" /></div>
                 <p className="font-bold">Height</p>
             </div>
-            <p className="no-overflow text-center">
+            <p data-testid="height" className="no-overflow text-center">
                 &nbsp;{data.height}
             </p>
         </div>
@@ -57,7 +57,7 @@ const Card = ({ data }) => {
                 <div className="bg-figyelllow rounded py-2 px-3 flex items-center justify-center"><RiHandCoinFill className="h-5 w-5text-black" /></div>
                 <p className="font-bold">Deposit</p>
             </div>
-            <p className="no-overflow text-center">
+            <p data-testid="deposit" className="no-overflow text-center">
                 &nbsp;{formatDeposit(data.actions[0].data.deposit)}
             </p>
         </div>

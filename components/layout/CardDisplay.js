@@ -34,6 +34,7 @@ const CardDisplay = ({ data }) => {
                     text="Previous"
                     addStyle="w-full md:w-auto"
                     clicked={()=>{prev()}}
+                    testId="prev"
                 />
             }
 
@@ -43,6 +44,7 @@ const CardDisplay = ({ data }) => {
                     text="Next"
                     addStyle="w-full md:w-auto"
                     clicked={()=>{next()}}
+                    testId="next"
                 />
             }
 

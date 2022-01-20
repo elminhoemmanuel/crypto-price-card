@@ -1,9 +1,9 @@
 import React from 'react'
 
-const PriBtnOutlined = ({clicked, text,addStyle }) => {
+const PriBtnOutlined = ({clicked, text,addStyle, testId }) => {
 
     return (
-        <button onClick={clicked} type="button" className={`bg-transparent border border-black rounded whitespace-nowrap
+        <button data-testid={testId} onClick={clicked} type="button" className={`bg-transparent border border-black rounded whitespace-nowrap
         focus:outline-none py-2 px-8 text-black hover:text-figyelllow hover:bg-black mb-3 ${addStyle}`}>
             {text}
         </button>
