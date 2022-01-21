@@ -7,8 +7,8 @@ import CardDisplay from '../components/layout/CardDisplay';
 
 export default function Home() {
 
-    let url = "http://figment-mock-data.figment.network/near/transactions"
-    let pollInterval = 20 //poll interval duration in seconds
+    const url = "http://figment-mock-data.figment.network/near/transactions"
+    const pollInterval = 20 //poll interval duration in seconds
 
 
     const [usedData, setUsedData] = useState([]);
@@ -88,7 +88,7 @@ export default function Home() {
                     loading ? <Loader /> : 
                     <div>
                         {
-                            error && <ErrorDisplay err={error} /> 
+                            error && !usedData[0] && <ErrorDisplay err={error} /> 
                         }
                         {
                             usedData[0] && !error && <CardDisplay data={validateData(usedData)} /> 
