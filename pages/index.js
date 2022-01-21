@@ -52,7 +52,7 @@ export default function Home() {
         let reqdArr = arr.filter(item=>item.actions[0].type==="Transfer" && item.success);
         let datedArr = []
         for (let i = 0; i < reqdArr.length; i++) {
-            datedArr.push({...reqdArr[i], date:new Date(reqdArr[i].created_at)})
+            datedArr.push({...reqdArr[i], date:new Date(reqdArr[i].time)})
         }
         const sortedArr = datedArr.sort((a, b) => b.date - a.date)
         return sortedArr
