@@ -45,7 +45,10 @@ To clone and run this application locally, you'll need [Git](https://git-scm.com
 # Clone this repository
 $ git clone https://github.com/elminhoemmanuel/crypto-price-card.git
 
-# Install dependencies
+# Move into the crypto-price-card folder
+$ cd crypto-price-card
+
+# open up your command line and then Install dependencies
 $ npm install
 
 # Run the app
