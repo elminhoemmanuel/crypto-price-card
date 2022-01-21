@@ -12,13 +12,13 @@ const CardDisplay = ({ data }) => {
     const next = () => setCurrentItem(prev => prev + 1);
     const prev = () => setCurrentItem(prev => prev - 1);
 
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     console.log(data);
+        console.log(data);
 
-    //     return () => {
-    //     }
-    // }, [])
+        return () => {
+        }
+    }, [])
 
     return <div className="w-full md:w-3/4 lg:w-3/5 mx-auto">
 

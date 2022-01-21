@@ -25,7 +25,7 @@ Some noteworthy information about this project are;
 
 - I tried to be as modular as possible to ensure that the code base is scalable hence I wrote a number of components even down to an ErrorDisplay component to display an error.
 
-- As regards testing I wrote a few unit tests to test all of the base components in `./components/base` seeing the project is not quite robust and I am not expected to spend too long on it leading me to write integration/e2e tests.
+- As regards testing I wrote a few unit tests to test all of the base components in `./components/base` seeing the project is not quite robust and I am not expected to spend too long on it leading me to write integration/e2e tests. Hence I wrote that quantity of tests owing largely to not being required to spend too much time on the task else I would have written more.
 
 ### Built With
 
