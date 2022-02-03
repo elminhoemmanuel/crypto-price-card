@@ -13,13 +13,13 @@ const Card = ({ data }) => {
         return `${String(num)} NEAR`
     }
 
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     console.log(data);
+        console.log(data.actions[0].data.deposit);
 
-    //     return () => {
-    //     }
-    // }, [])
+        return () => {
+        }
+    }, [])
 
     return <div className="w-full border border-gray-300 shadow-lg rounded-md p-6 bg-white">
         <div className="flex items-center justify-center flex-col border-b border-gray-400 py-4">
