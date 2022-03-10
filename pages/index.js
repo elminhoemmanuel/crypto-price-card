@@ -34,14 +34,11 @@ export default function Home() {
     const handleNewData = (incoming, old) => {
         if (old[0] !== undefined) {
             if (incoming[0].id === old[0].id) {
-                console.log("same");
                 setUsedData(old);
             } else if (incoming[0].id !== old[0].id) {
-                console.log("different");
                 setUsedData([...incoming, ...old]);
             }
         } else {
-            console.log("fetching for first time")
             setUsedData(incoming);
         }
 
